@@ -1,0 +1,19 @@
+{
+  "query": "帮我分析一下中国A股市场黄金相关的股票，这篇分析报告全文必须以简体中文形式输出",
+  "max_sections": 3,
+  "publish_formats": {
+    "markdown": true,
+    "pdf": true,
+    "docx": true
+  },
+  "include_human_feedback": false,
+  "follow_guidelines": true,
+  "model": "deepseek-r1",
+  "guidelines": [
+    "这篇分析报告应该以APA格式编写",
+    "每个子部分都必须包含使用超链接的支持来源。如果不存在，请删除 sub 部分或将其重写为上一节的一部分。",
+    "这篇分析报告必须以简体中文形式输出",
+    "除了技术分析章节，其余章节子章节数量必须小于等于3"
+  ],
+  "verbose": true
+}

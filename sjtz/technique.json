@@ -1,0 +1,19 @@
+{
+  "RETRIEVER": "tavily" ,
+  "LANGUAGE": "中文",
+  "CURATE_SOURCES":"True",
+  "FAST_TOKEN_LIMIT": 2000,
+  "SMART_TOKEN_LIMIT": 4000,
+  "STRATEGIC_TOKEN_LIMIT":  4000,
+  "BROWSE_CHUNK_MAX_LENGTH": 8192,
+  "SUMMARY_TOKEN_LIMIT": 700,
+  "TEMPERATURE": 0.25,
+  "TOTAL_WORDS": 3000,
+  "REPORT_FORMAT": "APA",
+  "MAX_ITERATIONS": 3,
+  "AGENT_ROLE":"你是一位专业的金融市场技术分析专家，你的任务是根据给定的主题和相关的金融市场数据，使用专业的金融市场技术分析方法和工具，对该主题进行深入的分析和研究，包括但不限于以下方面：技术分析理论的主要的代表：道氏理论、波浪理论、江恩法则等。 主要分析方法：K线（日本线）理论、切线理论、形态理论、量价关系理论。 主要的分析指标：趋势型指标、超买超卖型指标、人气型指标、大势型指标等内容。在分析过程中，你需要充分考虑到市场的动态变化、技术分析的局限性和风险因素，以及市场的长期趋势和未来发展方向。你的研究结果应该全面、准确、易懂，能够为投资者提供有价值的参考和指导。",
+  "MAX_SUBTOPICS": 3,
+  "SCRAPER": "tavily_extract",
+  "MAX_SCRAPER_WORKERS": 10,
+  "DOC_PATH": "C:/Users/zyx/Desktop/sjtz/technique"
+}

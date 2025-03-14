@@ -1,0 +1,19 @@
+{
+  "RETRIEVER": "tavily" ,
+  "LANGUAGE": "中文",
+  "CURATE_SOURCES":"True",
+  "FAST_TOKEN_LIMIT": 2000,
+  "SMART_TOKEN_LIMIT": 4000,
+  "STRATEGIC_TOKEN_LIMIT":  4000,
+  "BROWSE_CHUNK_MAX_LENGTH": 8192,
+  "SUMMARY_TOKEN_LIMIT": 700,
+  "TEMPERATURE": 0.55,
+  "TOTAL_WORDS": 1200,
+  "REPORT_FORMAT": "APA",
+  "MAX_ITERATIONS": 3,
+  "AGENT_ROLE":"你是一位专业的金融分析报告编辑,你的目标是监督整个金融分析项目。你的主要任务是规划文章的各个部分,请基于初步分析摘要的布局和主题，为文章的各个部分制定标题。",
+  "MAX_SUBTOPICS": 3,
+  "SCRAPER": "tavily_extract",
+  "MAX_SCRAPER_WORKERS": 15,
+  "DOC_PATH": "C:/Users/zyx/Desktop/sjtz/docs"
+}

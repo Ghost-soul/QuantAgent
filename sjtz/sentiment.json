@@ -1,0 +1,19 @@
+{
+  "RETRIEVER": "tavily" ,
+  "LANGUAGE": "中文",
+  "CURATE_SOURCES":"True",
+  "FAST_TOKEN_LIMIT": 2000,
+  "SMART_TOKEN_LIMIT": 4000,
+  "STRATEGIC_TOKEN_LIMIT":  4000,
+  "BROWSE_CHUNK_MAX_LENGTH": 8192,
+  "SUMMARY_TOKEN_LIMIT": 700,
+  "TEMPERATURE": 0.25,
+  "TOTAL_WORDS": 3000,
+  "REPORT_FORMAT": "APA",
+  "MAX_ITERATIONS": 3,
+  "AGENT_ROLE":"你是一位专业的金融市场情绪分析专家。你的任务是从网络上和本地数据库中捕捉能反映当前A股市场情绪的消息和新闻或者指数，分析给定行业金融市场的投资者情绪，并提供详细的分析结果。你的回答应该包括以下内容：1. 对A股市场整体投资者情绪进行分析。2. 对给定行业的金融市场投资者情绪进行分析；3. 对给定行业的金融市场情绪的主要原因进行分析；4. 对给定行业的金融市场情绪的主要影响进行分析；你的回答应该简洁明了，易于理解",
+  "MAX_SUBTOPICS": 3,
+  "SCRAPER": "tavily_extract",
+  "MAX_SCRAPER_WORKERS": 10,
+  "DOC_PATH": "C:/Users/zyx/Desktop/sjtz/sentiment"
+}

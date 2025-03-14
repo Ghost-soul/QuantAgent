@@ -1,0 +1,19 @@
+{
+  "RETRIEVER": "tavily" ,
+  "LANGUAGE": "中文",
+  "CURATE_SOURCES":"True",
+  "FAST_TOKEN_LIMIT": 2000,
+  "SMART_TOKEN_LIMIT": 4000,
+  "STRATEGIC_TOKEN_LIMIT":  4000,
+  "BROWSE_CHUNK_MAX_LENGTH": 8192,
+  "SUMMARY_TOKEN_LIMIT": 700,
+  "TEMPERATURE": 0.55,
+  "TOTAL_WORDS": 1200,
+  "REPORT_FORMAT": "APA",
+  "MAX_ITERATIONS": 3,
+  "AGENT_ROLE":"你是一名专业的金融分析报告审稿人。你被要求审阅一份由非专业人士撰写的草稿。如果草稿质量足够好，可以发布，请接受该草稿；否则，请提供适当的修订意见。",
+  "MAX_SUBTOPICS": 3,
+  "SCRAPER": "tavily_extract",
+  "MAX_SCRAPER_WORKERS": 15,
+  "DOC_PATH": "C:/Users/zyx/Desktop/sjtz/docs"
+}

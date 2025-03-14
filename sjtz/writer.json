@@ -1,0 +1,19 @@
+{
+  "RETRIEVER": "tavily" ,
+  "LANGUAGE": "中文",
+  "CURATE_SOURCES":"True",
+  "FAST_TOKEN_LIMIT": 2000,
+  "SMART_TOKEN_LIMIT": 4000,
+  "STRATEGIC_TOKEN_LIMIT":  4000,
+  "BROWSE_CHUNK_MAX_LENGTH": 8192,
+  "SUMMARY_TOKEN_LIMIT": 700,
+  "TEMPERATURE": 0.55,
+  "TOTAL_WORDS": 3000,
+  "REPORT_FORMAT": "APA",
+  "MAX_ITERATIONS": 3,
+  "AGENT_ROLE":"你是一位金融分析报告写作者。你的唯一目标是根据金融分析报告的结果和信息，撰写一篇关于某个主题的优秀分析报告,请尽可能保证原报告的完整性和准确性。",
+  "MAX_SUBTOPICS": 3,
+  "SCRAPER": "tavily_extract",
+  "MAX_SCRAPER_WORKERS": 15,
+  "DOC_PATH": "C:/Users/zyx/Desktop/sjtz/history"
+}

@@ -3,7 +3,7 @@ import numpy
 import talib
 import datetime
 
-def technical_analysis(code,period="daily",days=60):
+def technical_analysis(code,period="daily",days=90):
     today = datetime.date.today()
     start_date = today - datetime.timedelta(days=days)
     #print(start_date,today)
@@ -105,4 +105,3 @@ def technical_analysis(code,period="daily",days=60):
     upperband, middleband, lowerband = talib.BBANDS(close, timeperiod=55, nbdevup=2, nbdevdn=2, matype=0)
     dic = {"当前价":close[len(close)-1],"rsi":rsi[len(close)-1],"macd":macd[len(close)-1],"macdsignal":macdsignal[len(close)-1],"macdhist":macdhist[len(close)-1],"布林轨道upperband":upperband[len(close)-1],"布林轨道middleband":middleband[len(close)-1],"布林轨道lowerband":lowerband[len(close)-1],"K线形态":pattern}
     return dic
-

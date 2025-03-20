@@ -10,7 +10,7 @@ from datetime import datetime
 from call_model import call_model
 from indicators_to_prompt import indicators_to_prompt
 dir = os.path.dirname(__file__)
-load_dotenv(r"C:\Users\zyx\Desktop\sjtz\.env")
+load_dotenv(r"C:\Users\zyx\Desktop\s\QuantAgent\sjtz\.env")
 today = datetime.now().strftime('%Y/%m/%d')
 #print(os.getenv("NOMIC_API_KEY"))
 async def get_research_report(query: str, report_type: str, report_source: str,config_path:str) -> str:
@@ -92,7 +92,7 @@ def outputs(prompt,codes,path):
     summary = call_model(content = prompt4)
 
     result = draft.replace("section1:行业研究及宏观背景分析",section1).replace("section2:市场情绪分析",section2).replace("section3:技术面分析",section3).replace("summary:结论与投资建议",summary)
-    with open(os.path.join(path,"writer_report.md"), "w", encoding="utf-8") as file:
+    with open(os.path.join(path,"try\\writer_report.md"), "w", encoding="utf-8") as file:
             file.write(result)
 
     prom = f"""你是一位专业的金融分析报告编辑,你的目标是根据markdown语法对报告在初稿基础上进行细微修改。
@@ -103,16 +103,18 @@ def outputs(prompt,codes,path):
     """
     revise_report = call_model(content= prom)
 
-    with open(os.path.join(path,"revise_report.md"), "w", encoding="utf-8") as file:
+    with open(os.path.join(path,"try\\revise_report.md"), "w", encoding="utf-8") as file:
         file.write(revise_report)
     return revise_report
 
 
 if __name__ == "__main__":
     t1 = time.time()
+    print(os.getenv("NOMIC_API_KEY"))
+    print(os.getenv("TAVILY_API_KEY"))
     prompt = "请帮我分析一下A股市场有色金属 铜相关板块各股并给出投资建议"
     codes = indicators_to_prompt(["601899","603993","600362","601168","000630","603979","000878","601212","002203","000737","002171","601609","600490"])
-    outputs(prompt = prompt,codes = codes,path = "try")
+    outputs(prompt = prompt,codes = codes,path = dir)
     t2 = time.time()
     print(t2-t1)
 

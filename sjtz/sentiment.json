@@ -15,5 +15,5 @@
   "MAX_SUBTOPICS": 3,
   "SCRAPER": "tavily_extract",
   "MAX_SCRAPER_WORKERS": 10,
-  "DOC_PATH": "C:/Users/zyx/Desktop/sjtz/sentiment"
+  "DOC_PATH": "C:/Users/zyx/Desktop/s/QuantAgent/sjtz/sentiment"
 }

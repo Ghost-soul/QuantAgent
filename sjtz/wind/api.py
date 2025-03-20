@@ -22,7 +22,7 @@ ax.spines['right'].set_visible(False) # ax右轴隐藏
 z_ax = ax.twinx() # 创建与轴群ax共享x轴的轴群z_ax
 z_ax.plot(data.index.values, z, color='blue')
 z_ax.set_ylabel('Billion')
-
+plt.xticks(rotation=30)
 plt.rcParams['font.sans-serif'] = ['SimHei']
 plt.title('COMEX交易所黄金库存水平及市值')
 plt.savefig(os.path.join(dir,'plot.png'))
@@ -37,7 +37,7 @@ prompt = f"""这是近一个月COMEX交易所黄金库存量的数据：{data['S
 data.columns = ["comex黄金库存量","comex黄金库存市值","黄金现货价（伦敦市场）","上海金交所黄金现货价"]
 new_data = data.to_markdown()
 result = call_model(prompt)
-result+="\n"+"![图](plot.png)"
-result+="\n"+new_data
+result+="\n\n"+"![图](plot.png)"
+result+="\n\n"+new_data
 with open(os.path.join(dir,"stragety.md"), "w", encoding="utf-8") as file:
             file.write(result)

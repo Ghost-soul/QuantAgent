@@ -22,7 +22,7 @@ ax.spines['right'].set_visible(False) # ax右轴隐藏
 z_ax = ax.twinx() # 创建与轴群ax共享x轴的轴群z_ax
 z_ax.plot(data.index.values, z, color='blue')
 z_ax.set_ylabel('Billion')
-plt.xticks(rotation=30)
+ax.tick_params(axis='x', rotation = 30)
 plt.rcParams['font.sans-serif'] = ['SimHei']
 plt.title('COMEX交易所黄金库存水平及市值')
 plt.savefig(os.path.join(dir,'plot.png'))

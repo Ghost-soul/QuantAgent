@@ -13,4 +13,3 @@ def call_model(content):
             ]
     )
     return completion.choices[0].message.content
-call_model("1+1等于几")

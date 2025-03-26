@@ -35,7 +35,7 @@ prompt = f"""这是近一个月COMEX交易所黄金库存量的数据：{data['S
 任务：请根据上述结果分析判断近期所有可能存在的套利机会和策略。
 请使用Markdown格式回答，但不要用任何代码块（如 ```）包裹内容。
 """
-data.columns = ["comex黄金库存量","comex黄金库存市值","黄金现货价（伦敦市场）","上海金交所黄金现货价","美元兑人民币汇率"]
+data.columns = ["comex黄金库存量","comex黄金库存市值(billion)","黄金现货价（伦敦市场）","上海金交所黄金现货价","美元兑人民币汇率"]
 new_data = data.to_markdown()
 result = call_model(prompt)
 result+="\n\n"+"![图](plot.png)"
